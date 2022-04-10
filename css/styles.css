@@ -1,7 +1,24 @@
+:root{
+  --dominant-text-color--:#212121;
+  --focus-color--:#2196f3
+  --subtitle-color:#757575
+
 body {
-  font-family: 'Roboto Mono';
+  font-family:'Roboto';
+  color: var(--dominant-text-color--);
+  background-color: #ffffffF;
+ 
 }
 
+
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* --------------------------LOGO-------------------------- */
 .logo {
   text-decoration: none;
   color: #2196f3;
@@ -10,7 +27,38 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+/* --------------------------HEADER-------------------------- */
 
-footer {
-  background-color: rgb(72, 72, 72);
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
+
+
+.navigation-link:hover,
+.navigation-link:focus,
+.header-tel:focus,
+.header-tel:hover,
+.header-mail:focus,
+.header-mail:hover{
+  color: var(--focus-color--);
+}
+
+.header-tel{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: ;
+}
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
