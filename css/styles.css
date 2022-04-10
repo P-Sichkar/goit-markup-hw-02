@@ -14,7 +14,9 @@
   --team-background-color: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --batton-filter-focus-background-color: #2196f3;
+  --batton-filter-focus-text-color: #ffffff;
   --batton-filter-background-color: #f5f4fa;
+  --batton-filter-text-color: #212121;
   --projects-subtitle-color: #757575;
 }
 
@@ -52,10 +54,15 @@ body {
   color: var(--navigation-link-color);
 }
 
+.current {
+  color: var(--focus-link-color);
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--focus-link-color);
 }
+
 .header-tel:focus,
 .header-tel:hover,
 .header-mail:focus,
@@ -86,11 +93,13 @@ body {
   color: var(--hero-text-color);
 }
 .hero-button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--hero-button-text-color);
+  background-color: var(--hero-button-background-color);
 }
 
 /* --------------------------FEATURE-------------------------- */
@@ -196,4 +205,27 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
+}
+
+/* --------------------------Filter-PORTFOLIO-------------------------- */
+
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--batton-filter-text-color);
+  background-color: var(--batton-filter-background-color);
+}
+.filter-btn:focus,
+.filter-btn:hover,
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--batton-filter-focus-text-color);
+  background-color: var(--batton-filter-focus-background-color);
 }
