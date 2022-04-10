@@ -1,15 +1,28 @@
-:root{
-  --dominant-text-color--:#212121;
-  --focus-color--:#2196f3
-  --subtitle-color:#757575
-
-body {
-  font-family:'Roboto';
-  color: var(--dominant-text-color--);
-  background-color: #ffffffF;
- 
+/* ----- */
+:root {
+  --dominant-text-color: #212121;
+  --logo-color: #2196f3;
+  --navigation-link-color: #212121;
+  --focus-link-color: #2196f3;
+  --focus-contact-color: #2196f3;
+  --header-contact-color: #757575;
+  --hero-text-color: #ffffff;
+  --hero-button-background-color: #2196f3;
+  --hero-button-text-color: #ffffff;
+  --Feature-subtitle-color: #757575;
+  --team-subtitle-color: #757575;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --batton-filter-focus-background-color: #2196f3;
+  --batton-filter-background-color: #f5f4fa;
+  --projects-subtitle-color: #757575;
 }
 
+/* --------------- */
+body {
+  font-family: 'Roboto';
+  color: var(--dominant-text-color--);
+  background-color: #ffffff;
+}
 
 .link {
   text-decoration: none;
@@ -21,7 +34,7 @@ body {
 /* --------------------------LOGO-------------------------- */
 .logo {
   text-decoration: none;
-  color: #2196f3;
+  color: var(--logo-color);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -34,31 +47,42 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--navigation-link-color);
 }
 
-
 .navigation-link:hover,
-.navigation-link:focus,
+.navigation-link:focus {
+  color: var(--focus-link-color);
+}
 .header-tel:focus,
 .header-tel:hover,
 .header-mail:focus,
-.header-mail:hover{
-  color: var(--focus-color--);
+.header-mail:hover {
+  color: var(--focus-contact-color);
 }
 
-.header-tel{
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: ;
-}
+.header-tel,
 .header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--header-contact-color);
+}
 
-  color: #757575;
+/* --------------------------HERO-------------------------- */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--hero-text-color);
+}
+.hero-button {
+  color: var(--hero-button-text-color);
+}
